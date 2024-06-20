@@ -137,7 +137,6 @@ For help on adding as a dependency, view the [documentation](https://flutter.io/
 ## Configuring in app purchase
 
 - Please refer to [Blog](https://medium.com/@dooboolab/react-native-in-app-purchase-121622d26b67).
-- [Amazon Kindle Fire](KINDLE.md)
 
 ## Usage Guide
 
@@ -262,10 +261,8 @@ If you have enabled proguard you will need to add the following rules to your `p
 
 ```
 #In app Purchase
--keep class com.amazon.** {*;}
 -keep class com.dooboolab.** { *; }
 -keep class com.android.vending.billing.**
--dontwarn com.amazon.**
 -keepattributes *Annotation*
 ```
 
